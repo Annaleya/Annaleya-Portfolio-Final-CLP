@@ -36,6 +36,7 @@
 #text {
     display: inline-block;
     vertical-align: middle;
+    color: #000000;
     letter-spacing: 2px;
 }
 
@@ -44,6 +45,7 @@
     vertical-align: middle;
     width: 3px;
     height: 20px;
+    background-color: #9ABEF8;
     animation: blink 1s step-end infinite;
 }
 
@@ -53,6 +55,6 @@
     }
 
     50% {
-        background-color: #000000
+        background-color: #9ABEF8;
     }
 }
