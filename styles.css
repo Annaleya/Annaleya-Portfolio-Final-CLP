@@ -1,7 +1,11 @@
+
+/*Style the top navigation bar*/
 .topnav {
     background-color: #9ABEF8;
+    overflow: scroll;
 }
 
+/*Styling nav links*/
 .topnav a {
     float: left;
     display: block;
@@ -9,10 +13,12 @@
     color: #000000 ;
 }
 
-.topnav a:hover {
+/*Styling nav links on hover*/
+.topnav a :hover {
     color: #ffffff;
 }
 
+/*On screens 600px wide or less, make the nav links stack on each other instead of next to each other*/
 @media (max-width: 600px) {
     .topnav a {
         float: none;
