@@ -1,0 +1,21 @@
+.topnav {
+    background-color: #9ABEF8;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    color: #000000 ;
+}
+
+.topnav a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
