@@ -11,10 +11,12 @@
     display: block;
     text-align: center;
     color: #000000 ;
+    padding: 14px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Styling nav links on hover*/
-.topnav a :hover {
+.topnav a:hover {
     color: #ffffff;
 }
 
@@ -23,5 +25,34 @@
     .topnav a {
         float: none;
         width: 100%;
+    }
+}
+
+/*style the text in "typing" div & divs in between*/
+#typing {
+    text-align: center;
+}
+
+#text {
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 2px;
+}
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 20px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #000000
     }
 }
