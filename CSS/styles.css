@@ -1,7 +1,6 @@
 
 html {
-    background-color: #9ABEF8;
-    padding: 20px;
+    border: 20px solid #9ABEF8;
 }
 
 /*Style the top navigation bar*/
@@ -77,28 +76,24 @@ h1 {
 
 /*Style Img Links on Home Page*/
 
+    
 #img-container {
-    margin: 220px 0px;
+     margin: 240px 0px;
 }
 
-#github-link {
+ #github-link {
     float:right;
-    display: inline-block;
     padding: 10px;
 }
 
 #twitter-link {
     float:right;
-    display: inline-block;
-    width: 2%;
+    width: 5%;
     padding: 10px;
 }
 
 #linkedin-link {
     float:right;
-    display: inline-block;
-    width: 2%;
+    width: 5%;
     padding: 10px;
 }
-
-/*Contact page CSS*/
