@@ -11,38 +11,24 @@
                 <a href="projects.html">Projects</a>
         </nav>
         </header>
-        <div class="contact">
-            <div class="map" id="google_map"></div>
-                <div class="contact_form">
+        <div class="container">
                     <h3>Contact Me</h3>
-                    <p>Feel free to send me a message below!</p>
-                </div>
-            <form class="validate-form">
-                <div class="validate-input">
-                    <p class="input">Full Name:</p>
-                    <input type="text" name="name" placeholder="Enter Full Name">
-                </div>
+                    <p id="contact-msg">Feel free to send me a message below!</p>
+            <form class="contact-me">
 
-                <div class="validate-input">
-                    <p class="input">Email:</p>
-                    <input type="text" name="email" placeholder="Enter Email Address"
-                </div>
+                    <label for="name">Full Name:</label>
+                    <input id="name" type="text" name="name" placeholder="Enter Full Name">
 
-                <div class="validate-input">
-                    <p class="input">Phone Number:</p>
-                    <input type="text" name="phone" placeholder="Enter Phone Number"
-                </div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" placeholder="Enter Email Address">
+               
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="text" name="phone" placeholder="Enter Phone Number">
+ 
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Comment..."></textarea>
 
-                <div class="validate-input">
-                    <p class="input">Message:</p>
-                    <textarea name="message" placeholder="Your Comment..."></textarea>
-                </div>
-
-                <div class="container-form-btn">
-                    <button class="form-btn">
-                        <span>Submit</span>
-                    </button>
-                </div>
+                    <input type="submit" value="Submit">
             </form>
         </div>
     </body>
