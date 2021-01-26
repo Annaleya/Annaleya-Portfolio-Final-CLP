@@ -1,6 +1,7 @@
 
 html {
-    border: 20px solid #9ABEF8;
+    background-color: #9ABEF8;
+    padding: 20px;
 }
 
 /*Style the top navigation bar*/
