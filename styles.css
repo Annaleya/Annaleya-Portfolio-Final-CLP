@@ -77,31 +77,26 @@ h1 {
 }
 
 /*Style Img Links on Home Page*/
-
-    
 #img-container {
      margin: 240px 0px;
 }
 
  #github-link {
     float:right;
-    padding: 10px;
+    margin-right: 5px;
 }
 
 #twitter-link {
     float:right;
     width: 5%;
-    padding: 10px;
 }
 
 #linkedin-link {
     float:right;
     width: 5%;
-    padding: 10px;
 }
 
 /*Style contact me page*/
-
 .container {
     text-align: center;
     margin: 70px;
@@ -121,13 +116,14 @@ input[type=text], select, textarea {
     align-content: center;
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-bottom: 16px; /* Bottom margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
     resize: vertical;
-  }
-  /* Style the submit button with a specific background color etc */
+}
+
+/* Style the submit button*/
 input[type=submit] {
     background-color: #E1E2EF;
     color:#05204A;
@@ -135,10 +131,9 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+}
+
+/*When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
     background-color: #BBBEDB;
-  }
-  
+}
