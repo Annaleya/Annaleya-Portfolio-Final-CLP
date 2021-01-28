@@ -1,5 +1,5 @@
-// list of sentences
 
+// list of sentences
 var _CONTENT = [
     "Junior Web Developer",
     "Hiding in a cave somewhere",
@@ -7,15 +7,12 @@ var _CONTENT = [
 ];
 
 //Sentence being processed
-
 var _PART = 0;
 
 //character of sentence being processed
-
 var _PART_INDEX = 0;
 
 //hold the value returned from setInterval
-
 var _INTERVAL_VAL;
 
 //Element that holds the text
@@ -41,7 +38,6 @@ function Type() {
 }
 
 //Delete effect
-
 function Delete() {
     var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
     _ELEMENT.innerHTML = text;
