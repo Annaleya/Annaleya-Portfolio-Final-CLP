@@ -1,21 +1,18 @@
 
 html {
     background-color: #9ABEF8;
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 /*Style the top navigation bar*/
 .topnav {
     background-color: #ffffff;
-    overflow: scroll;
 }
 
 /*Styling nav links*/
 .topnav a {
     float: right;
-    display: block;
-    text-align: center;
-    color: #000000 ;
+    color: #000000;
     padding: 14px 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -26,23 +23,15 @@ html {
     color: #9ABEF8;
 }
 
-/*On screens 600px wide or less, make the nav links stack on each other instead of next to each other*/
-@media (max-width: 600px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
-}
-
 body {
     background-color: #ffffff;
-    height: 675px;
+    height: 645px;
 }
 
 h1 {
     font-size: 60px;
     text-align: center;
-    margin: 250px 0px 0px 0px;
+    padding: 240px 0px 0px 0px;
 }
 
 /*style the text in "typing" div & divs in between*/
@@ -99,7 +88,9 @@ h1 {
 /*Style contact me page*/
 .container {
     text-align: center;
-    margin: 70px;
+    margin: 30px 180px 180px 180px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
@@ -115,12 +106,21 @@ h3 {
 input[type=text], select, textarea {
     align-content: center;
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 16px;
-    resize: vertical;
+    margin-bottom: 20px;
+    resize:none;
+
+}
+
+#message {
+    height: 150px;
+}
+
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Style the submit button*/
@@ -131,6 +131,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /*When moving the mouse over the submit button, add a darker color */
