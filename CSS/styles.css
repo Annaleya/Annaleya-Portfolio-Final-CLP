@@ -29,14 +29,21 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 32px;
     text-align: center;
     padding: 240px 0px 0px 0px;
+}
+/*When screen width is 768px or wider, change font size of h1's*/
+@media (min-width: 768px){
+    h1 {
+        font-size: 60px;
+    }
 }
 
 /*style the text in "typing" div & divs in between*/
 #typing {
     text-align: center;
+    min-height: 22px;
 }
 
 #text {
@@ -65,7 +72,27 @@ h1 {
     }
 }
 
-/*Style Img Links on Home Page in lower right corner*/
+#img-container{
+    margin: 280px 0px;
+}
+
+#github-link{
+    float: right;
+    margin-right: 5px;
+}
+
+#twitter-link{
+    float: right;
+    margin-right: 10px;
+}
+
+#linkedin-link{
+    float: right;
+    margin-right: 10px;
+}
+
+/*Style Img Links on Home Page in lower right corner for when screen size is 768px to 1024px*/
+@media (min-width:768px) {
 #img-container {
      margin: 240px 0px;
 }
@@ -84,8 +111,69 @@ h1 {
     float:right;
     width: 5%;
 }
+}
 
-/*Style contact me page*/
+/*Style Img Links on Home Page in lower right corner for when screen size is 1024px or wider*/
+@media (min-width:1024px) {
+#img-container {
+     margin: 240px 0px;
+}
+
+ #github-link {
+    float:right;
+    margin-right: 5px;
+}
+
+#twitter-link {
+    float:right;
+    width: 3%;
+}
+
+#linkedin-link {
+    float:right;
+    width: 3%;
+}
+}
+
+.container{
+    text-align: center;
+    margin: 60px;
+    padding: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    font-size: 22px;
+    margin: 50px 0px 0px 0px;
+}
+
+#contact-msg{
+    font-size: 14px;
+}
+
+input[type=text], select, textarea {
+    align-content: center;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize:none;
+}
+
+#message{
+    height: 120px;
+}
+
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*Style contact me page at 768px or wider*/
+
+@media (min-width:768px){
 .container {
     text-align: center;
     margin: 30px 180px 180px 180px;
@@ -112,7 +200,6 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-bottom: 20px;
     resize:none;
-
 }
 
 #message {
@@ -133,7 +220,7 @@ input[type=submit] {
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-
+}
 /*When moving the mouse over the submit button, add a darker color */
 input[type=submit]:hover {
     background-color: #BBBEDB;
