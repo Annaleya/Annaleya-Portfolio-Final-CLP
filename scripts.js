@@ -62,3 +62,9 @@ function Delete() {
 
 //Start typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+//Inital skrollr to create parallax scrolling effect
+var s = skrollr.init();
+
+//Refresh skrollr after resizing sections
+s.refresh($('.homeSlide'));
