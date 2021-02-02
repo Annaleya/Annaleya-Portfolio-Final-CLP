@@ -63,8 +63,31 @@ function Delete() {
 //Start typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
 
-//Inital skrollr to create parallax scrolling effect
-var s = skrollr.init();
+//Validate Contact Form
+function validateForm() {
+    var NAME_VAL = document.forms["contact-me"]["name"].value;
+    var EMAIL_VAL = document.forms["contact-me"]["email"].value;
+    var PHONE_VAL = document.forms["contact-me"]["phone"].value;
+    var MESSAGE_VAL = document.forms["contact-me"]["message"].value;
 
-//Refresh skrollr after resizing sections
-s.refresh($('.homeSlide'));
+    if (NAME_VAL == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+
+    if (EMAIL_VAL == "") {
+        alert("Please enter your email");
+        return false;
+    }
+
+    if (PHONE_VAL == "") {
+        alert("Please enter a valid phone number");
+        return false;
+    }
+
+    if (MESSAGE_VAL == "") {
+        alert("Please enter a message to send");
+        return false;
+    }
+    return true;
+}

@@ -14,22 +14,23 @@
         <div class="container">
                 <h3>Contact Me</h3>
                 <p id="contact-msg">Feel free to send me a message below!</p>
-            <form class="contact-me">
+            <form class="contact-me" onsubmit="return validateForm()" method="post">
 
                 <label for="name">Full Name:</label>
-                <input id="name" type="text" name="name" placeholder="Enter Full Name">
+                <input id="name" type="text" name="name" placeholder="Enter Full Name" required>
 
                 <label for="email">Email:</label>
-                <input id="email" type="text" name="email" placeholder="Enter Email Address">
+                <input id="email" type="text" name="email" placeholder="Enter Email Address" required>
                
                 <label for="phone">Phone Number:</label>
-                <input id="phone" type="text" name="phone" placeholder="Enter Phone Number">
+                <input id="phone" type="text" name="phone" placeholder="Enter Phone Number" required>
  
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your Comment..."></textarea>
+                <textarea id="message" name="message" placeholder="Your Comment..." required></textarea>
 
                 <input type="submit" value="Submit">
             </form>
         </div>
     </body>
+    <script type="text/javascript" src="scripts.js"></script>
 </html>
