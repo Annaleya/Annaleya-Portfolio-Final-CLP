@@ -1,4 +1,10 @@
 
+// JS to animate hamburger menu
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
 // list of sentences
 var _CONTENT = [
     "Junior Web Developer",
