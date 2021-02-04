@@ -101,6 +101,8 @@ function validateForm() {
     if (MESSAGE_VAL == "") {
         alert("Please enter a message to send");
         return false;
-    }
+    } 
+    else {alert("Thank you for your message!")
+}
     return true;
 }
