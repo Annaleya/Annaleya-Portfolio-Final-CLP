@@ -42,6 +42,13 @@ html {
     transform: rotate(45deg) translate(-9px, -8px);
 }
 
+@media (min-width: 768px){
+    .nav-container {
+        opacity: 0;
+        cursor:unset;
+    }
+}
+
 /*Styling nav links*/
 .topnav a {
     float: right;
