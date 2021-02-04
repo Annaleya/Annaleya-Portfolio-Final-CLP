@@ -22,13 +22,13 @@ html {
     height: 5px;
     background-color: #000000;
     margin: 6px 0;
-    transition: 0.2s;
+    transition: 0.6s;
 }
 
 /*Create rotation in first bar*/
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
 }
 
 /*Make second bar disapear*/
@@ -38,8 +38,8 @@ html {
 
 /*Rotate last bar*/
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-9px -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
 }
 
 /*Styling nav links*/
@@ -237,7 +237,7 @@ h3 {
 input[type=text], select, textarea {
     align-content: center;
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
