@@ -14,7 +14,7 @@
         <div class="container">
                 <h3>Contact Me</h3>
                 <p id="contact-msg">Feel free to send me a message below!</p>
-            <form class="contact-me" onsubmit="return validateForm()" method="post">
+            <form name="contact-me" onsubmit="return validateForm(event)" method="post" novalidate>
 
                 <label for="name">Full Name:</label>
                 <input id="name" type="text" name="name" placeholder="Enter Full Name" required>

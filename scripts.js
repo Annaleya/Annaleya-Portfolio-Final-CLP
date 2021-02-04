@@ -30,12 +30,15 @@ var _CURSOR = document.querySelector("#cursor");
 //typing effect
 function Type() {
     var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-    _ELEMENT.innerHTML = text;
+    if (_ELEMENT){
+        _ELEMENT.innerHTML=text;
+    }
     _PART_INDEX++;
 
     if(text === _CONTENT[_PART]) {
-        _CURSOR.style.display = 'none';
-
+        if (_CURSOR){
+            _CURSOR.style.display = 'none';
+        }
         clearInterval(_INTERVAL_VAL);
         setTimeout(function() {
             _INTERVAL_VAL = setInterval(Delete, 50);
@@ -46,7 +49,9 @@ function Type() {
 //Delete effect
 function Delete() {
     var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+    if (_ELEMENT){
     _ELEMENT.innerHTML = text;
+    }
     _PART_INDEX--;
 
     if(text === '') {
@@ -60,7 +65,9 @@ function Delete() {
         _PART_INDEX = 0;
 
         setTimeout(function() {
+            if (_CURSOR){
             _CURSOR.style.display = 'inline-block';
+            }
             _INTERVAL_VAL = setInterval(Type, 100);
         }, 200)
     }
