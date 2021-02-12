@@ -6,23 +6,22 @@
 
     <body id="contact-page">
         <header>
-            <nav class="topnav">
-                <div class="nav-container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                </div>
-            </nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+                <label class="ham-bar" for="menu-btn">
+                    <span class="nav-icon"></span>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                        </ul>
+                </label>
         </header>
         <div class="container">
+                <div class="label">
                 <h3>Contact Me</h3>
                 <p id="contact-msg">Feel free to send me a message below!</p>
+                </div>
             <form name="contact-me" onSubmit="return validateForm()" method="post">
-
+                <div class="form-val">
                 <label for="name">Full Name:</label>
                 <input id="name" type="text" name="name" placeholder="Enter Full Name">
 
@@ -34,8 +33,10 @@
  
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" placeholder="Your Comment..."></textarea>
-
-                <input type="submit" value="Submit">
+                </div>
+                <div class="sub-btn">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
     </body>

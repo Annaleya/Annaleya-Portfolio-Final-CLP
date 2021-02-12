@@ -4,68 +4,109 @@ html {
     padding: 0px 20px 0px 20px;
 }
 
-/*Style the top navigation bar*/
-.topnav {
-    background-color: #ffffff;
-}
-
-/*Style Hamburger Menu*/
-.nav-container {
-    cursor: pointer;
-    float: right;
-    padding: 10px;
-}
-
-/*Style bars of hamburger menu*/
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #000000;
-    margin: 6px 0;
-    transition: 0.6s;
-}
-
-/*Create rotation in first bar*/
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-/*Make second bar disapear*/
-.change .bar2 {
-    opacity: 0;
-}
-
-/*Rotate last bar*/
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-9px -8px);
-    transform: rotate(45deg) translate(-9px, -8px);
-}
-
-@media (min-width: 768px){
-    .nav-container {
-        opacity: 0;
-        cursor:unset;
-    }
-}
-
-/*Styling nav links*/
-.topnav a {
-    float: right;
-    color: #000000;
-    padding: 14px 16px;
+/*Style Nav Links*/
+.nav-links a {
+    color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
 }
 
-/*Styling nav links on hover*/
-.topnav a:hover {
+.nav-links a:hover {
     color: #9ABEF8;
 }
 
+/*Style the top navigation bar*/
+header {
+    background-color: #ffffff;
+    width: auto;
+    z-index: 3;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+header .nav-links {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+header .ham-bar {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+header .ham-bar .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .1s ease-out;
+    width: 25px;
+}
+
+header .ham-bar .nav-icon:before,
+header .ham-bar .nav-icon::after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+header .ham-bar .nav-icon:before {
+    top: 5px;
+}
+
+header .ham-bar .nav-icon:after {
+    top: -5px;
+}
+
+/*Ham menu Button*/
+header .menu-btn{
+    display: none;
+}
+
+header .menu-btn:checked ~ .nav-links{
+    max-height: 240px;
+}
+
+header .menu-btn:checked ~ .ham-bar .nav-icon {
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .ham-bar .nav-icon:before {
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .ham-bar .nav-icon:after {
+    transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .ham-bar:not(.steps) .nav-icon:before,
+header .menu-btn:checked ~ .ham-bar:not(.steps) .nav-icon:after {
+    top: 0;
+}
 body {
     background-color: #ffffff;
-    height: 645px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 h1 {
@@ -73,6 +114,16 @@ h1 {
     text-align: center;
     padding: 240px 0px 0px 0px;
 }
+
+footer {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
 /*When screen width is 768px or wider, change font size of h1's*/
 @media (min-width: 768px){
     h1 {
@@ -112,91 +163,29 @@ h1 {
     }
 }
 
-#img-container{
-    margin: 280px 0px;
-}
-
-#github-link{
-    float: right;
-    margin-right: 5px;
-}
-
-#twitter-link{
-    float: right;
-    margin-right: 10px;
-}
-
-#linkedin-link{
-    float: right;
-    margin-right: 10px;
-}
-
-/*Style Img Links on Home Page in lower right corner for when screen size is 768px to 1024px*/
-@media (min-width:768px) {
-#img-container {
-     margin: 240px 0px;
-}
-
- #github-link {
-    float:right;
-    margin-right: 5px;
-}
-
-#twitter-link {
-    float:right;
-    width: 5%;
-}
-
-#linkedin-link {
-    float:right;
-    width: 5%;
-}
-}
-
-/*Style Img Links on Home Page in lower right corner for when screen size is 1024px or wider*/
-@media (min-width:1024px) {
-#img-container {
-     margin: 240px 0px;
-}
-
- #github-link {
-    float:right;
-    margin-right: 5px;
-}
-
-#twitter-link {
-    float:right;
-    width: 3%;
-}
-
-#linkedin-link {
-    float:right;
-    width: 3%;
-}
-}
-
 /*Style the contact me page for mobile first design*/
-.container{
+
+.label {
     text-align: center;
-    margin: 40px;
-    padding: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3{
     font-size: 22px;
-    margin: 50px 0px 0px 0px;
+    padding-top: 100px;
 }
 
 #contact-msg{
     font-size: 14px;
 }
 
+.form-val{
+    text-align: center;
+}
+
 input[type=text], select, textarea {
-    align-content: center;
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -204,13 +193,16 @@ input[type=text], select, textarea {
 }
 
 #message{
-    height: 120px;
+    height: 150px;
 }
 
 ::placeholder {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.sub-btn {
+    text-align: center;
+}
 input[type=submit] {
     background-color: #E1E2EF;
     color:#05204A;
@@ -218,18 +210,13 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
 }
 
 /*Style contact me page at 768px or wider*/
 
 @media (min-width:768px){
-.container {
-    text-align: center;
-    margin: 30px 180px 180px 180px;
-    padding: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 h3 {
     font-size: 40px;
