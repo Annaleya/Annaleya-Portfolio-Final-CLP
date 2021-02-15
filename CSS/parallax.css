@@ -1,0 +1,120 @@
+.parallax{
+    padding-top: 100px;
+}
+
+/* Parallax base styles */
+  .parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    -webkit-overflow-scrolling: touch;
+    perspective: 300px;
+  }
+
+  .parallax-slide {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--fore {
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  /* style the groups*/
+  #slide1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  #slide1 .parallax__layer--base {
+    background: #ffffff;;
+  }
+
+  #slide2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+  #slide2 .parallax__layer--back {
+    background: #ffffff;
+  }
+
+  #slide3 {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  #slide3 .parallax__layer--base {
+    background: #ffffff;
+  }
+
+  #slide4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #slide4 .parallax__layer--deep {
+    background: #ffffff;
+  }
+
+  #slide5 {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+  #slide5 .parallax__layer--base {
+    background: #ffffff;
+  }
+
+  #slide6 {
+    z-index: 2; /* slide under group 5 and 7 */
+  }
+  #slide6 .parallax__layer--back {
+    background: #ffffff;
+  }
+
+  #slide7 {
+    z-index: 3; /* slide over group 7 */
+  }
+  #slide7 .parallax__layer--base {
+    background: #ffffff;
+  }
