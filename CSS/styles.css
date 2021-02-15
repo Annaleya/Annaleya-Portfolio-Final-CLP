@@ -10,15 +10,14 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* header */
-
+/*Style Header*/
 .header {
     background-color: #fff;
     position: fixed;
     width: 95%;
     z-index: 3;
   }
-  
+
   .header ul {
     margin: 0;
     padding: 0;
@@ -26,27 +25,25 @@ a {
     overflow: hidden;
     background-color: #fff;
   }
-  
+
   .header li a {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
   }
-  
+
   .header li a:hover {
     color: #9ABEF8;
   }
 
-  
+  /*Style Hamburger Menu*/
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
     text-align: center;
   }
-  
- 
-  
+
   .header .ham-bar {
     cursor: pointer;
     display: inline-block;
@@ -55,7 +52,7 @@ a {
     position: relative;
     user-select: none;
   }
-  
+
   .header .ham-bar .navicon {
     background: #333;
     display: block;
@@ -64,7 +61,7 @@ a {
     transition: background .2s ease-out;
     width: 18px;
   }
-  
+
   .header .ham-bar .navicon:before,
   .header .ham-bar .navicon:after {
     background: #333;
@@ -75,42 +72,41 @@ a {
     transition: all .2s ease-out;
     width: 100%;
   }
-  
+
   .header .ham-bar .navicon:before {
     top: 5px;
   }
-  
+
   .header .ham-bar .navicon:after {
     top: -5px;
   }
-  
-  
-  
+
   .header .menu-btn {
     display: none;
   }
-  
+
   .header .menu-btn:checked ~ .menu {
     max-height: 240px;
   }
-  
+
   .header .menu-btn:checked ~ .ham-bar .navicon {
     background: transparent;
   }
-  
+
   .header .menu-btn:checked ~ .ham-bar .navicon:before {
     transform: rotate(-45deg);
   }
-  
+
   .header .menu-btn:checked ~ .ham-bar .navicon:after {
     transform: rotate(45deg);
   }
-  
+
   .header .menu-btn:checked ~ .ham-bar:not(.steps) .navicon:before,
   .header .menu-btn:checked ~ .ham-bar:not(.steps) .navicon:after {
     top: 0;
   }
-  
+
+/*Remove Hamburger Menu at 768px or wider*/
   @media (min-width: 768px) {
     .header li {
       float: left;
@@ -128,6 +124,7 @@ a {
     }
   }
 
+/*Style Body*/
 body {
     background-color: #ffffff;
     position: fixed;
@@ -168,6 +165,8 @@ footer {
 /*style the text in "typing" div & divs in between*/
 #typing {
     min-height: 22px;
+    position:absolute;
+    padding-top: 100px;
 }
 
 #text {
