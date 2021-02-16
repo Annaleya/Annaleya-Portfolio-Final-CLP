@@ -1,5 +1,7 @@
 This is my capstone project for Code Louisville, the project is a portfolio for myself and currently includes the following required features:
 
+**NOTE: The contact form DOES NOT submit anywhere, there is only JS validation on the form itself
+
     A typing and deleting effect that can be viewed on the home page made from Javascript
 
     Media Queries to move content when the page is resized from smaller to larger screens
