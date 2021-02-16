@@ -206,7 +206,7 @@ footer {
 }
 h3{
     font-size: 35px;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 #contact-msg{
@@ -261,7 +261,7 @@ input[type=submit] {
 
 h3 {
     font-size: 40px;
-    margin: 0px;
+    margin: 35px;
 }
 
 #contact-msg {
@@ -282,7 +282,7 @@ input[type=text], select, textarea {
 }
 
 #message {
-    height: 30vh;
+    height: 20vh;
 }
 
 ::placeholder {
