@@ -204,6 +204,7 @@ footer {
 .form-label{
     font-size: 125%;
 }
+
 h3{
     font-size: 35px;
     padding-top: 20px;
@@ -244,6 +245,7 @@ input[type=text], select, textarea {
 .sub-btn {
     text-align: center;
 }
+
 input[type=submit] {
     background-color: #E1E2EF;
     color:#05204A;

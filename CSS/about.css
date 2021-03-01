@@ -1,0 +1,18 @@
+ .content-container {
+     font-size: 25px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     display: inline-block;
+     text-align: center;
+     margin: 200px 200px;
+ }
+
+.btn {
+    background-color: #E1E2EF;
+    color:#05204A;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+}
