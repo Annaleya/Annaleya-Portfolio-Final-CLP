@@ -3,7 +3,16 @@
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      display: inline-block;
      text-align: center;
-     margin: 200px 200px;
+     margin: 15% 0;
+ }
+
+ @media (min-width: 768px) {
+     .content-container{
+         text-align: center;
+         margin: 15%;
+
+
+     }
  }
 
 .btn {
