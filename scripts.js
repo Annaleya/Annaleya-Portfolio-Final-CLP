@@ -96,7 +96,7 @@ function validateForm() {
     if (MESSAGE_VAL == "") {
         alert("Please enter a message to send");
         return false;
-    } 
+    }
     else {alert("Thank you for your message!")
 }
     return true;
@@ -106,7 +106,7 @@ function validateForm() {
 
 const delay = 3000; //ms
 
-const slides = document.querySelector(".slides");
+const slides = document.querySelectorAll(".slide");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
 
