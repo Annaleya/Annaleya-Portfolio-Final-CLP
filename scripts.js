@@ -135,7 +135,7 @@ document.querySelector(".next-slide").addEventListener("click", function() {
 });
 
 document.querySelector(".prev-slide").addEventListener("click", function() {
-  changeSlide(false);
+  changeSlide();
   restart();
 });
 
