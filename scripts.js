@@ -106,7 +106,7 @@ function validateForm() {
 
 const delay = 3000; //ms
 
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
 
@@ -135,7 +135,7 @@ document.querySelector(".next-slide").addEventListener("click", function() {
 });
 
 document.querySelector(".prev-slide").addEventListener("click", function() {
-  changeSlide();
+  changeSlide(false);
   restart();
 });
 
