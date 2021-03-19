@@ -103,7 +103,6 @@ function validateForm() {
 }
 
 //Automation of image slide on about page
-
 const delay = 3000; //ms
 
 const slides = document.querySelectorAll(".slides");
@@ -111,6 +110,7 @@ const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
 
 let current = 0;
+left = 0;
 
 function changeSlide(next = true) {
   if (next) {
@@ -130,7 +130,7 @@ const restart = function() {
 
 // Controls
 document.querySelector(".next-slide").addEventListener("click", function() {
-  changeSlide();
+  changeSlide(false);
   restart();
 });
 
@@ -138,4 +138,3 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
-
