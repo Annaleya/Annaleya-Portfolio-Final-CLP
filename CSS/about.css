@@ -1,19 +1,19 @@
 
- .content-container {
-     font-size: 28px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     display: inline-block;
-     text-align: center;
-     margin-top: 15%;
- }
+.content-container {
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15%;
+}
 
- @media (min-width: 768px) {
-     .content-container{
-         text-align: center;
-         margin-top: 10%;
-         line-height: 130%;
-     }
- }
+@media (min-width: 768px) {
+    .content-container{
+        text-align: center;
+        margin-top: 10%;
+        line-height: 130%;
+    }
+}
 
 .btn {
     background-color: #E1E2EF;
@@ -97,7 +97,7 @@
     opacity: 0.5;
     transition: ease .3s;
     cursor: pointer;
- }
+}
 
 :hover {
     opacity: 1;
@@ -105,17 +105,17 @@
 
 
 .gallery-slides {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  display: flex;
-  width: 100%;
-  transition: 1s ease-in-out all;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
 }
 
-  .slides {
+.slides {
     min-width: 100%;
     min-height: 250px;
     height: auto;
-  }
+}
