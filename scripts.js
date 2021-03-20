@@ -102,38 +102,35 @@ function validateForm() {
     return true;
 }
 
-//Automation of image slide on about page
-const delay = 3000; //ms
+//About Page Image Carousel
 
-const slides = document.querySelectorAll(".slides");
-const slidesCount = slides.childElementCount;
-const maxLeft = (slidesCount - 1) * 100 * -1;
+var currentSlide = 0; //stores index of current slide to determine what slide its on
+const slides = document.querySelectorAll(".slides") //Stores all slides in an array for usage
 
-let current = 0;
-
-function changeSlide(next = true) {
-if (next) {
-current += current > maxLeft ? -100 : current * -1;
-} else {
-current = current < 0 ? current + 100 : maxLeft;
+const init = (n) => {
+    slides.forEach((slide, index)=>{
+        slide.style.display = "none"
+    })
+    slides[n].style.display = "block"
 }
 
-slides.style.left = current + "%";
+//Next Function
+const next = () => {
+    currentSlide >= slides.length - 1 ? currentSlide = 0 : currentSlide++
+    init(currentSlide)
+    //check to see what slide we are on if greater than or equal to last index of slides, resets to first slide
 }
 
-let autoChange = setInterval(changeSlide, delay);
-const restart = function() {
-clearInterval(autoChange);
-autoChange = setInterval(changeSlide, delay);
-};
+//Prev function
+const prev = () => {
+    currentSlide <= 0 ? currentSlide = slides.length - 1 : currentSlide--
+    init(currentSlide)
+}
 
-// Controls
-document.querySelector(".next-slide").addEventListener("click", function() {
-changeSlide(false);
-restart();
-});
+document.querySelector(".next-slide").addEventListener('click', next) //add event listner for "clicking" and calls the next function
+document.querySelector(".prev-slide").addEventListener('click', prev) //add event listner for "clicking" and calls the prev function
 
-document.querySelector(".prev-slide").addEventListener("click", function() {
-changeSlide(false);
-restart();
-});
+//Timer to change slide every 3 seconds
+setInterval(() => {
+    next()
+}, 3000);
