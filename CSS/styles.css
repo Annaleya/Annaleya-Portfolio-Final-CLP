@@ -1,164 +1,164 @@
 
 html {
-    background-color: #9ABEF8;
-    padding: 0px 20px 0px 20px;
+  background-color: #9ABEF8;
+  padding: 0px 20px;
 }
 
 /*Style Nav Links*/
 a {
-    color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Style Header*/
 .header {
-    background-color: #fff;
-    position: fixed;
-    width: 95%;
-    z-index: 3;
-  }
+  background-color: #fff;
+  position: fixed;
+  width: 95%;
+  z-index: 3;
+}
 
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
 
-  .header li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-  }
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
 
-  .header li a:hover {
-    color: #9ABEF8;
-  }
+.header li a:hover {
+  color: #9ABEF8;
+}
 
-  /*Style Hamburger Menu*/
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    text-align: center;
-  }
+/*Style Hamburger Menu*/
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  text-align: center;
+}
 
-  .header .ham-bar {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
+.header .ham-bar {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
 
-  .header .ham-bar .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
+.header .ham-bar .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
 
-  .header .ham-bar .navicon:before,
-  .header .ham-bar .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
+.header .ham-bar .navicon:before,
+.header .ham-bar .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
 
-  .header .ham-bar .navicon:before {
-    top: 5px;
-  }
+.header .ham-bar .navicon:before {
+  top: 5px;
+}
 
-  .header .ham-bar .navicon:after {
-    top: -5px;
-  }
+.header .ham-bar .navicon:after {
+  top: -5px;
+}
 
-  .header .menu-btn {
-    display: none;
-  }
+.header .menu-btn {
+  display: none;
+}
 
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
 
-  .header .menu-btn:checked ~ .ham-bar .navicon {
-    background: transparent;
-  }
+.header .menu-btn:checked ~ .ham-bar .navicon {
+  background: transparent;
+}
 
-  .header .menu-btn:checked ~ .ham-bar .navicon:before {
-    transform: rotate(-45deg);
-  }
+.header .menu-btn:checked ~ .ham-bar .navicon:before {
+  transform: rotate(-45deg);
+}
 
-  .header .menu-btn:checked ~ .ham-bar .navicon:after {
-    transform: rotate(45deg);
-  }
+.header .menu-btn:checked ~ .ham-bar .navicon:after {
+  transform: rotate(45deg);
+}
 
   .header .menu-btn:checked ~ .ham-bar:not(.steps) .navicon:before,
   .header .menu-btn:checked ~ .ham-bar:not(.steps) .navicon:after {
-    top: 0;
+  top: 0;
   }
 
 /*Remove Hamburger Menu at 768px or wider*/
-  @media (min-width: 768px) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .ham-bar {
-      display: none;
-    }
+@media (min-width: 768px) {
+  .header li {
+    float: left;
   }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .ham-bar {
+    display: none;
+  }
+}
 
 /*Style Body*/
 body {
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .content-container {
-    height: 98vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 footer {
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1rem;
-    text-align: end;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  text-align: end;
 }
 
 /*When screen width is 768px or wider, change font size of h1's*/
 @media (min-width: 768px){
     h1 {
-        font-size: 60px;
+      font-size: 60px;
     }
 }
 
@@ -187,122 +187,120 @@ footer {
 
 @keyframes blink {
     from, to {
-        background-color: transparent;
+      background-color: transparent;
     }
 
     50% {
-        background-color: #9ABEF8;
+      background-color: #9ABEF8;
     }
 }
 
 /*Style the contact me page for mobile first design*/
-
 .label {
-    text-align: center;
+  text-align: center;
 }
 
 .form-label{
-    font-size: 125%;
+  font-size: 125%;
 }
 
 h3{
-    font-size: 35px;
-    padding-top: 20px;
+  font-size: 35px;
+  padding-top: 20px;
 }
 
 #contact-msg{
-    margin-top: -20px;
-    margin-bottom: 30px;
-    font-size: 14px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .form-val{
-    text-align: center;
+  text-align: center;
 }
 
 input[type=text], select, textarea {
-    text-align: center;
-    font-size: 110%;
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    resize:none;
-    height: 5vh;
+  text-align: center;
+  font-size: 110%;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  resize:none;
+  height: 5vh;
 }
 
 #message{
-    height: 30vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 30vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ::placeholder {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sub-btn {
-    text-align: center;
+  text-align: center;
 }
 
 input[type=submit] {
-    background-color: #E1E2EF;
-    color:#05204A;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0 auto;
+  background-color: #E1E2EF;
+  color:#05204A;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
 }
 
 /*Style contact me page at 768px or wider*/
-
 @media (min-width:768px){
-
 h3 {
-    font-size: 40px;
-    margin: 35px;
+  font-size: 40px;
+  margin: 35px;
 }
 
 #contact-msg {
-    font-size: 18px;
-    margin-top: 1%;
+  font-size: 18px;
+  margin-top: 1%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 0 3% 2% 3%;
-    resize:none;
-    display: block;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 3% 2% 3%;
+  resize:none;
+  display: block;
 }
 
 #message {
-    height: 20vh;
+  height: 20vh;
 }
 
 ::placeholder {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Style the submit button*/
 input[type=submit] {
-    background-color: #E1E2EF;
-    color:#05204A;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+  background-color: #E1E2EF;
+  color:#05204A;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 }
+
 /*When moving the mouse over the submit button, add a darker color */
 input[type=submit]:hover {
-    background-color: #BBBEDB;
+  background-color: #BBBEDB;
 }

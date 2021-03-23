@@ -17,10 +17,10 @@ var _PART_INDEX = 0;
 var _INTERVAL_VAL;
 
 //Element that holds the text
-var _ELEMENT = document.querySelector("#text");
+var _ELEMENT = document.getElementById("#text");
 
 //Cursor element
-var _CURSOR = document.querySelector("#cursor");
+var _CURSOR = document.getElementById("#cursor");
 
 //typing effect
 function Type() {
@@ -52,17 +52,19 @@ function Delete() {
     if(text === '') {
         clearInterval(_INTERVAL_VAL);
 
-        if(_PART == (_CONTENT.length - 1))
-            _PART = 0;
-        else
-            _PART++;
+        if(_PART == (_CONTENT.length - 1)){
+            _PART = 0;}
 
+        else{
+            _PART++;
+        }
         _PART_INDEX = 0;
 
         setTimeout(function() {
             if (_CURSOR){
             _CURSOR.style.display = 'inline-block';
             }
+
             _INTERVAL_VAL = setInterval(Type, 100);
         }, 200)
     }
