@@ -1,7 +1,7 @@
 
 
 // list of sentences
-var _CONTENT = [
+const _CONTENT = [
     "Junior Web Developer",
     "Hiding in a cave somewhere",
     "Thanks for checking out my page!"
@@ -17,10 +17,10 @@ var _PART_INDEX = 0;
 var _INTERVAL_VAL;
 
 //Element that holds the text
-var _ELEMENT = document.getElementById("#text");
+var _ELEMENT = document.querySelector("#text");
 
 //Cursor element
-var _CURSOR = document.getElementById("#cursor");
+var _CURSOR = document.querySelector("#cursor");
 
 //typing effect
 function Type() {
