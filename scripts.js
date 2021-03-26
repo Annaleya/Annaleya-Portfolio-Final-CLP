@@ -75,13 +75,19 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 //Validate Contact Form
 function validateForm() {
-    var NAME_VAL = document.forms["contact-me"]["name"].value;
+    var FIRST_NAME_VAL = document.forms["contact-me"]["first-name"].value;
+    var LAST_NAME_VAL = document.forms["contact-me"]["last-name"].value;
     var EMAIL_VAL = document.forms["contact-me"]["email"].value;
     var PHONE_VAL = document.forms["contact-me"]["phone"].value;
     var MESSAGE_VAL = document.forms["contact-me"]["message"].value;
 
-    if (NAME_VAL == "") {
-        alert("Name must be filled out");
+    if (FIRST_NAME_VAL == "") {
+        alert("First Name must be filled out");
+        return false;
+    }
+
+    if (LAST_NAME_VAL == ""){
+        alert("Last Name must be filled out");
         return false;
     }
 

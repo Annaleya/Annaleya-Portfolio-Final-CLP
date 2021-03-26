@@ -19,15 +19,20 @@
             </div>
             <form name="contact-me" onSubmit="return validateForm()" method="post">
                 <div class="form-val">
-                <label class="form-label" for="name"><strong>Full Name:</strong></label>
-                <input id="name" type="text" name="name" placeholder="Enter Full Name">
+                    <div class="flex-left">
+                <label class="form-label" for="first-name"><strong>First Name:</strong></label>
+                <input id="first-name" type="text" name="first-name" placeholder="Enter First Name">
 
                 <label class="form-label" for="email"><strong>Email:</strong></label>
                 <input id="email" type="text" name="email" placeholder="Enter Email Address">
+                    </div>
+                    <div class="flex-right">
+                <label class="form-label" for="last-name"><strong>Last Name:</strong></label>
+                <input id="last-name" type="text" name="last-name" placeholder="Enter Last Name">
 
                 <label class="form-label" for="phone"><strong>Phone Number:</strong></label>
                 <input id="phone" type="text" name="phone" placeholder="Enter Phone Number">
-
+                    </div>
                 <label class="form-label" for="message"><strong>Message:</strong></label>
                 <textarea id="message" name="message" placeholder="Your Comment..."></textarea>
                 </div>

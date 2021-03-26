@@ -106,24 +106,6 @@ a {
   top: 0;
   }
 
-/*Remove Hamburger Menu at 768px or wider*/
-@media (min-width: 768px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .ham-bar {
-    display: none;
-  }
-}
-
 /*Style Body*/
 body {
   background-color: #ffffff;
@@ -153,13 +135,6 @@ footer {
   bottom: 0;
   padding: 1rem;
   text-align: end;
-}
-
-/*When screen width is 768px or wider, change font size of h1's*/
-@media (min-width: 768px){
-    h1 {
-      font-size: 60px;
-    }
 }
 
 /*style the text in "typing" div & divs in between*/
@@ -227,13 +202,13 @@ input[type=text], select, textarea {
   border: 1px solid #333;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   resize:none;
   height: 5vh;
 }
 
 #message{
-  height: 30vh;
+  height: 20vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -245,6 +220,7 @@ input[type=text], select, textarea {
   text-align: center;
 }
 
+/*Style the submit button*/
 input[type=submit] {
   background-color: #E1E2EF;
   color:#05204A;
@@ -256,51 +232,87 @@ input[type=submit] {
   margin: 0 auto;
 }
 
-/*Style contact me page at 768px or wider*/
-@media (min-width:768px){
-h3 {
-  font-size: 40px;
-  margin: 35px;
-}
-
 #contact-msg {
   font-size: 18px;
   margin-top: 1%;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 95%;
-  padding: 10px;
-  border: 1px solid #333;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 0 3% 2% 3%;
-  resize:none;
-  display: block;
-}
-
-#message {
-  height: 20vh;
-}
-
-::placeholder {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* Style the submit button*/
-input[type=submit] {
-  background-color: #E1E2EF;
-  color:#05204A;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-}
-
 /*When moving the mouse over the submit button, add a darker color */
 input[type=submit]:hover {
   background-color: #BBBEDB;
+}
+
+/*Media Queries*/
+/*Remove Hamburger Menu at 768px or wider*/
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .ham-bar {
+    display: none;
+  }
+}
+
+/*When screen width is 768px or wider, change font size of h1's*/
+@media (min-width: 768px){
+  h1 {
+    font-size: 60px;
+  }
+}
+
+/*Style contact me page at 768px or wider*/
+@media (min-width:768px){
+  h3 {
+    font-size: 40px;
+    margin: 35px;
+  }
+
+  .form-val {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+
+  .form-val>* {
+    flex: 1 1 365px;
+  }
+
+.flex-left {
+  width: 50vw;
+}
+
+.flex-right{
+  width: 50vw;
+}
+
+#message{
+  margin: 0 10%;
+}
+}
+
+@media (min-width: 950px){
+  .form-val>* {
+    flex: 1 1 450px;
+  }
+  #message{
+    margin: 0 20%
+  }
+}
+
+@media (min-width: 1130px){
+  .form-val>* {
+    flex: 1 1 500px;
+  }
+  #message{
+    margin: 0 25%
+  }
 }
