@@ -245,8 +245,9 @@ input[type=submit]:hover {
 }
 
 /*Media Queries*/
-/*Remove Hamburger Menu at 768px or wider*/
-@media (min-width: 768px) {
+/*Style contact me page at 768px or wider*/
+@media (min-width:768px){
+/*Remove Hamburger menu when larger than 768px*/
   .header li {
     float: left;
   }
@@ -261,22 +262,16 @@ input[type=submit]:hover {
   .header .ham-bar {
     display: none;
   }
-}
-
-/*When screen width is 768px or wider, change font size of h1's*/
-@media (min-width: 768px){
+/*Resize all H1's on larger screens*/
   h1 {
     font-size: 60px;
   }
-}
 
-/*Style contact me page at 768px or wider*/
-@media (min-width:768px){
   h3 {
     font-size: 40px;
     margin: 35px;
   }
-
+/*Move contact form fields around at larger size*/
   .form-val {
     display: flex;
     flex-direction: row;
