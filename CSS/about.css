@@ -96,21 +96,18 @@
 }
 
 /*Media Queries*/
-
-@media (min-width: 768px) {
-    .content-container{
-        text-align: center;
-        margin-top: 10%;
-        line-height: 130%;
-    }
-}
-
 @media (min-width: 768px){
     .img-gallery{
         display: flex;
         width: 80vw;
         height: 150px;
         top: 70%;
+    }
+
+    .content-container{
+        text-align: center;
+        margin-top: 10%;
+        line-height: 130%;
     }
 }
 
