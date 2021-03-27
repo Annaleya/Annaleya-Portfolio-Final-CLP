@@ -8,6 +8,7 @@ html {
 a {
   color: #000;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
 }
 
 /*Style Header*/
