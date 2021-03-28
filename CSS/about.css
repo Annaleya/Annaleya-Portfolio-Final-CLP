@@ -4,6 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline-block;
     text-align: center;
+    font-size: 22px;
     margin-top: 15%;
 }
 
@@ -106,7 +107,7 @@
 
     .content-container{
         text-align: center;
-        margin-top: 10%;
+        margin: 10% 15%;
         line-height: 130%;
     }
 }
