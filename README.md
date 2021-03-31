@@ -10,6 +10,6 @@ This is my capstone project for Code Louisville, the project is a portfolio for 
 
     CSS Hamburger Menu that can be see on screens smaller than 768px
 
-    Javascript Image Carousel on the about me page that rotates through three random images
+    Javascript Image Carousel on the about me page that rotates through four random images
 
     There are no special requirements or parameters to run or view this project in its current state
